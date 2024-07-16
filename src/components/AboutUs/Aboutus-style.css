@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');;
+
+.aboutus{
+    padding: 10px;
+    background-color: #e0fef5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutus-text{
+    margin-left: 120px;
+}
+
+.aboutus-text p{
+    font-size: 1.5em;
+}
+
+.aboutus-text h1{
+    color: #0a6e4e;
+    font-family: "Lora", serif;
+    font-size: 3em;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.aboutus-text button{
+    margin-top: 30px;
+    margin-bottom: 15vh;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px 0 10px 0;
+    border: none;
+    background-color: #0a6e4e;
+    color: white;
+    font-size: 1em;
+}
+
+.aboutus-text button:hover{
+    background-color: #84bcaa;
+}
+
+.aboutus-img{
+    height: 90px;
+    width: inherit;
+}

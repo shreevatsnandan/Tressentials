@@ -1,0 +1,36 @@
+.reviews{
+    display: flex;
+    flex-direction: column;  
+}
+
+.comment-pfp img{
+   height: 10vh;
+   width: inherit;
+}
+
+.reviewers{
+    display: flex;
+    margin:5vw
+ 
+}
+
+.reviews-card{
+    border-radius: 25px;
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.reviews-card:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.reviewers h2{
+    color: #0a6e4e;
+}
