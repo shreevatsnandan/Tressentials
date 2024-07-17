@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-.aboutus{
+.aboutus {
     padding: 10px;
     background-color: #e0fef5;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.aboutus-text{
+.aboutus-text {
     margin-left: 120px;
+    flex: 1;
 }
 
-.aboutus-text p{
+.aboutus-text p {
     font-size: 1.5em;
 }
 
-.aboutus-text h1{
+.aboutus-text h1 {
     color: #0a6e4e;
     font-family: "Lora", serif;
     font-size: 3em;
@@ -23,7 +27,7 @@
     margin-top: 10vh;
 }
 
-.aboutus-text button{
+.aboutus-text button {
     margin-top: 30px;
     margin-bottom: 15vh;
     height: 40px;
@@ -35,11 +39,66 @@
     font-size: 1em;
 }
 
-.aboutus-text button:hover{
+.aboutus-text button:hover {
     background-color: #84bcaa;
 }
 
-.aboutus-img{
-    height: 90px;
-    width: inherit;
+.aboutus-img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutus-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .aboutus {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutus-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .aboutus-text p {
+        font-size: 1.2em;
+    }
+
+    .aboutus-text h1 {
+        font-size: 2em;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    .aboutus-text button {
+        margin-top: 20px;
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-text p {
+        font-size: 1em;
+    }
+
+    .aboutus-text h1 {
+        font-size: 1.5em;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+
+    .aboutus-text button {
+        margin-top: 15px;
+        margin-bottom: 5vh;
+    }
 }

@@ -1,20 +1,34 @@
-.reviews{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.reviews {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 5vw;
 }
 
-.comment-pfp img{
-   height: 10vh;
-   width: inherit;
+.head-range-head h1 {
+    color: #0a6e4e;
+    font-family: "Lora", serif;
+    font-size: 2em;
+    margin-bottom: 5vh;
+    text-align: center;
 }
 
-.reviewers{
+.comment-pfp img {
+    height: 10vh;
+    width: auto;
+    border-radius: 50%;
+}
+
+.reviewers {
     display: flex;
-    margin:5vw
- 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
 }
 
-.reviews-card{
+.reviews-card {
     border-radius: 25px;
     margin: 5px;
     padding: 20px;
@@ -22,15 +36,67 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1); 
-}
-
-
-.reviews-card:hover{
-    transform: scale(1.1); 
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
-.reviewers h2{
+.reviews-card:hover {
+    transform: scale(1.1);
+}
+
+.reviewers h2 {
     color: #0a6e4e;
+    margin-top: 1vh;
+}
+
+.reviewers p {
+    font-size: 1em;
+    margin: 1vh 0;
+}
+
+
+@media (max-width: 768px) {
+    .head-range-head h1 {
+        font-size: 1.5em;
+        margin-bottom: 3vh;
+    }
+
+    .reviews-card {
+        flex: 1 1 45%;
+        margin: 2vh 1vw;
+    }
+
+    .reviewers p {
+        font-size: 0.9em;
+    }
+
+    .reviewers h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .head-range-head h1 {
+        font-size: 1.2em;
+        margin-bottom: 2vh;
+    }
+
+    .reviews-card {
+        flex: 1 1 90%;
+        margin: 2vh 0;
+    }
+
+    .reviewers p {
+        font-size: 0.8em;
+    }
+
+    .reviewers h2 {
+        font-size: 1em;
+    }
+
+    .comment-pfp img {
+        height: 8vh;
+    }
 }

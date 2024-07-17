@@ -1,33 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.Hairrange{
+.Hairrange {
     font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
+    padding: 2vh 2vw;
+}
+
+.range {
+    margin: 3vh 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .range-card {
     cursor: pointer;
     text-align: center;
     align-items: center;
+    flex: 1 1 30%;
+    margin: 1vh ;
+    max-width: 300px;
 }
 
-.range-card img:hover{
-    transform: scale(1.1); 
-  transition: transform 0.3s ease-in-out;
+.range-card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.range{
-    margin: 10vh;
-    justify-content: space-evenly;
-    display: flex;
-}
-
-.head-range-head{
+.head-range-head {
     color: #0a6e4e;
     font-family: "Lora", serif;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-bottom: 5vh;
+}
+
+
+@media (max-width: 770px) {
+
+
+
+    .range-card {
+        flex: 1 1 45%;
+        margin: 1vh;
+    }
+    
+    .head-range-head {
+        font-size: 1.5em;
+    }
+
+    .range-card:nth-last-child(1):nth-child(odd) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .range-card {
+        flex: 1 1 45%;
+        margin: 1vh 0;
+    }
+    
+    .head-range-head {
+        font-size: 1.2em;
+        padding: 0 2vw;
+    }
+    
+    .range-card p {
+        font-size: 1em;
+    }
+
+    .range-card:nth-last-child(1):nth-child(odd) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

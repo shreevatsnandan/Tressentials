@@ -1,28 +1,79 @@
-.services{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.services {
     margin: 10vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.services-card{
+.services-card {
     color: #0a6e4e;
-}
-
-.services-card h1{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 100;
-}
-
-.services-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
-
+    padding: 2vw;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 300px;
+    margin: 1vh;
 }
 
-.services-card img{
+.services-card h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 1vh 0;
+}
+
+.services-card img {
     height: 100px;
     width: 100px;
+}
+
+.services-card p {
+    font-size: 1em;
+    margin-top: 1vh;
+}
+
+@media (max-width: 770px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-card {
+        flex: 1 1 80%;
+        margin: 2vh 0;
+    }
+
+    .services-card h2 {
+        font-size: 1.2em;
+    }
+
+    .services-card p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-card {
+        flex: 1 1 100%;
+        margin: 2vh 0;
+    }
+
+    .services-card h2 {
+        font-size: 1em;
+    }
+
+    .services-card p {
+        font-size: 0.8em;
+    }
+
+    .services-card img {
+        height: 80px;
+        width: 80px;
+    }
 }
